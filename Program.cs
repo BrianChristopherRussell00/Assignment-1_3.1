@@ -21,7 +21,7 @@ namespace Assignment_1_3._1
             Console.WriteLine(rectangleResult);
 
         }
-        
+
 
         static double SquareArea(double length)
         {
@@ -46,19 +46,34 @@ namespace Assignment_1_3._1
 
     }
 
-    // 1_3_2
+    // 1_3 Part 2
 
-    int[] arrayExample; 
+    int[] arrayExample;
 
-    string [] carArray = { "Honda", "BMW", "Jeep", "Lambo"};
+    string[] carArray = { "Honda", "BMW", "Jeep", "Lambo" };
 
-  arrayResult =  Console.WriteLine(carArray.Length);
+    arrayResult =  Console.WriteLine(carArray.Length);
 
         Array.Sort(carArray);
 
         foreach (string i in carArray)
 {
   Console.WriteLine(i);
+
+        }
+//1_3 Part 3
+
+int[] newArray = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+int i, arraySize = newArray.Length - 1;
+
+Console.WriteLine("Reverse");
+
+for (i = arraySize; i >= 0; i--)
+{
+
+    Console.WriteLine(" " + newArray[i] + " ");
+}
 }
 
 
